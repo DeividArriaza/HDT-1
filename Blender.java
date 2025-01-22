@@ -1,4 +1,4 @@
-public class Blender {
+public class Blender implements IBlender {
    private int speedLevel;
    private int capacity;
 
@@ -25,4 +25,43 @@ public class Blender {
         this.capacity = capacity;
     }
 
+    Blender blender = new Blender(0, 50);
+
+    @Override
+    public void SpeedUp(){
+        speedLevel = blender.getSpeedLevel() + 1;
+
+    }
+
+    @Override
+    public boolean IsFull(){
+        if(capacity == 50){
+            System.out.println("¡Cuidado, licuadora llena!");
+        }
+        else{
+            
+        }
+        return true;
+    }
+
+    @Override
+    public void Fill(){
+
+    }
+
+    @Override
+    public void Empty(){
+
+    }
+
+    @Override
+    public void SpeedDown(){
+
+    }
+
+    @Override
+    public int GetSpeed(){
+
+        return 0;
+    }
 }
