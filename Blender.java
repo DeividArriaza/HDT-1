@@ -1,4 +1,7 @@
+import java.util.Scanner;
 public class Blender implements IBlender {
+    Scanner scanner = new Scanner(System.in);
+
    private int speedLevel;
    private int capacity;
 
@@ -29,23 +32,32 @@ public class Blender implements IBlender {
 
     @Override
     public void SpeedUp(){
+        if (speedLevel <= 10)
         speedLevel = blender.getSpeedLevel() + 1;
 
     }
 
     @Override
     public boolean IsFull(){
-        if(capacity == 50){
-            System.out.println("¡Cuidado, licuadora llena!");
+        if(capacity < 50){
+            System.out.println("La licuadora esta vacia");
+            return false;
         }
         else{
-            
+            System.out.println("!Cuidado, la licuadora esta llena!");
+            return true;   
         }
-        return true;
     }
 
     @Override
     public void Fill(){
+        System.out.println("¿Que ingrediente desea agregar?");
+        String producto = scanner.nextLine();
+        System.out.println("¿Que cantidad (onzas) desea agregar?");
+        int cantidad = scanner.nextInt();
+        if (capacity > 50){
+
+        }
 
     }
 
