@@ -4,6 +4,7 @@ public class Blender implements IBlender {
 
    private int speedLevel;
    private int capacity;
+   
 
 
     public Blender(int speedLevel, int capacity) {
@@ -32,9 +33,10 @@ public class Blender implements IBlender {
 
     @Override
     public void SpeedUp(){
-        if (speedLevel <= 10)
+        if (speedLevel < 10){
         speedLevel = blender.getSpeedLevel() + 1;
-
+        System.out.println("Nivel");
+        }
     }
 
     @Override
