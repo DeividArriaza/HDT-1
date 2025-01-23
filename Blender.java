@@ -4,7 +4,11 @@ public class Blender implements IBlender {
 
    private int speedMax;
    private int capacity;
+<<<<<<< HEAD
    private int SpeedLevel;
+=======
+   
+>>>>>>> 2d638db5296a73460bf1e9c713775b9534a5bd2a
 
 
     public Blender(int speedMax, int capacity) {
@@ -30,8 +34,19 @@ public class Blender implements IBlender {
         this.capacity = capacity;
     }
 
+<<<<<<< HEAD
     public void setSpeedLevel(int speedLevel) {
         SpeedLevel = speedLevel;
+=======
+    Blender blender = new Blender(0, 50);
+
+    @Override
+    public void SpeedUp(){
+        if (speedLevel < 10){
+        speedLevel = blender.getSpeedLevel() + 1;
+        System.out.println("Nivel");
+        }
+>>>>>>> 2d638db5296a73460bf1e9c713775b9534a5bd2a
     }
 
 
