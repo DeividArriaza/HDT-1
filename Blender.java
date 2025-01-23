@@ -44,7 +44,7 @@ public class Blender implements IBlender {
     @Override
     public void Fill(){
         if (IsFull() == true) {
-            System.out.println("La licuadora ya está llena");
+            System.out.println("\nLa licuadora ya está llena");
         } else {
             setCapacity(50);
         }
@@ -55,7 +55,7 @@ public class Blender implements IBlender {
         if (IsFull() == true) {
             setCapacity(0);
         } else {
-            System.out.println("La licuadora ya está vacía");
+            System.out.println("\nLa licuadora ya está vacía");
         }
             
     }
@@ -65,7 +65,7 @@ public class Blender implements IBlender {
         if (SpeedLevel < speedMax) {
             SpeedLevel++;
         } else {
-            System.out.println("Ya está a Máxima potencia");
+            System.out.println("\n¡La licuadora se encuentra a máxima potencia!");
         }
         
     }
@@ -75,7 +75,7 @@ public class Blender implements IBlender {
         if (SpeedLevel > 0) {
             SpeedLevel--;
         } else {
-            System.out.println("La licuadora está apagada, no se puede bajar más la potencia");
+            System.out.println("\nLa licuadora se encuentra apagada, no se puede bajar más la potencia");
         }
     }
 
