@@ -1,3 +1,10 @@
+/*
+ * Algoritmos y estructuras de datos 
+ * Hoja de Trabajo 1
+ * Mariana Castañeda 24481
+ * Juan Francisco Orozco 24647
+ * David López 24730
+ */
 import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
